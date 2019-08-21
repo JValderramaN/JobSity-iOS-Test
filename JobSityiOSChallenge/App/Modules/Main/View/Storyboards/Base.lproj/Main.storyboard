@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fC5-op-PNi">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Favorites-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="FavoriteShowsViewController" customModule="JobSityiOSChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Favorites" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
+                                <rect key="frame" x="90.5" y="262.5" width="139.5" height="43"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
+                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Favorites" image="heart" id="cPa-gy-q4n"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="575"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="NsB-G5-f3D">
+            <objects>
+                <viewController id="fC5-op-PNi" customClass="LoginViewController" customModule="JobSityiOSChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0c6-1P-qxL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qsn-Ck-UCD">
+                                <rect key="frame" x="136.5" y="277" width="47" height="34"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Enter"/>
+                                <connections>
+                                    <action selector="enterButtonTapped" destination="fC5-op-PNi" eventType="touchUpInside" id="et4-Bj-FnT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job Sity iOS Challenge" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPm-gg-19O">
+                                <rect key="frame" x="28.5" y="60" width="263" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="José Valderrama" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXB-jN-so4">
+                                <rect key="frame" x="106" y="511" width="108" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qsn-Ck-UCD" firstAttribute="centerY" secondItem="MuO-dq-JJK" secondAttribute="centerY" id="0gF-ms-2T4"/>
+                            <constraint firstItem="qsn-Ck-UCD" firstAttribute="centerX" secondItem="MuO-dq-JJK" secondAttribute="centerX" id="9kp-9o-5UD"/>
+                            <constraint firstItem="VXB-jN-so4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="MuO-dq-JJK" secondAttribute="leading" constant="10" id="CpE-Rv-IfS"/>
+                            <constraint firstItem="MuO-dq-JJK" firstAttribute="bottom" secondItem="VXB-jN-so4" secondAttribute="bottom" constant="40" id="EAF-4i-jqh"/>
+                            <constraint firstItem="CPm-gg-19O" firstAttribute="centerX" secondItem="MuO-dq-JJK" secondAttribute="centerX" id="FzA-Df-ic2"/>
+                            <constraint firstItem="MuO-dq-JJK" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="VXB-jN-so4" secondAttribute="trailing" constant="10" id="JSA-wV-bbG"/>
+                            <constraint firstItem="CPm-gg-19O" firstAttribute="top" secondItem="MuO-dq-JJK" secondAttribute="top" constant="40" id="TtW-8d-3YO"/>
+                            <constraint firstItem="MuO-dq-JJK" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="CPm-gg-19O" secondAttribute="trailing" constant="10" id="d4G-rJ-OOC"/>
+                            <constraint firstItem="CPm-gg-19O" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="MuO-dq-JJK" secondAttribute="leading" constant="10" id="mX3-QI-BwC"/>
+                            <constraint firstItem="VXB-jN-so4" firstAttribute="centerX" secondItem="MuO-dq-JJK" secondAttribute="centerX" id="zXU-AL-3fZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MuO-dq-JJK"/>
+                    </view>
+                    <connections>
+                        <segue destination="49e-Tb-3d3" kind="presentation" identifier="toLobby" id="XN1-oT-3H0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dUS-tx-6XI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-939" y="50"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="gRe-WV-PVL" kind="relationship" relationship="viewControllers" id="8Mv-lp-1U1"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="9Dz-ew-6oA" kind="relationship" relationship="viewControllers" id="xP1-zF-G7T"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-83" y="36"/>
+        </scene>
+        <!--Show-->
+        <scene sceneID="19G-WL-jCc">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Show" id="gRe-WV-PVL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" id="FNx-fm-VAo"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SOI-rS-sbC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="-334.85915492957747"/>
+        </scene>
+        <!--People-->
+        <scene sceneID="uZm-27-W1O">
+            <objects>
+                <viewControllerPlaceholder storyboardName="People" id="9Dz-ew-6oA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" id="lUt-DG-UUw"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ysA-ig-QUd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="774" y="-20"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heart" width="32" height="32"/>
+    </resources>
+</document>
